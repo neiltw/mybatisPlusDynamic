@@ -15,19 +15,6 @@
 	        driver-class-name: com.mysql.jdbc.Driver
 	        connection-init-sqls: set names utf8mb4
 	        connectionProperties: druid.stat.slowSqlMillis=200;druid.stat.logSlowSql=true;config.decrypt=false
-	        filters: stat
-	        maxActive: 20
-	        initialSize: 1
-	        maxWait: 60000
-	        minIdle: 1
-	        timeBetweenEvictionRunsMillis: 60000
-	        minEvictableIdleTimeMillis: 300000
-	        validationQuery: select 'x'
-	        testWhileIdle: true
-	        testOnBorrow: false
-	        testOnReturn: false
-	        poolPreparedStatements: true
-	        maxOpenPreparedStatements: 20
 	      slave:
 	        jdbc-url: jdbc:mysql://localhost:3306/project?useUnicode=true&characterEncoding=UTF8&allowMultiQueries=true&useSSL=false
 	        username: root
@@ -35,19 +22,6 @@
 	        driver-class-name: com.mysql.jdbc.Driver
 	        connection-init-sqls: set names utf8mb4
 	        connectionProperties: druid.stat.slowSqlMillis=200;druid.stat.logSlowSql=true;config.decrypt=false
-	        filters: stat
-	        maxActive: 20
-	        initialSize: 1
-	        maxWait: 60000
-	        minIdle: 1
-	        timeBetweenEvictionRunsMillis: 60000
-	        minEvictableIdleTimeMillis: 300000
-	        validationQuery: select 'x'
-	        testWhileIdle: true
-	        testOnBorrow: false
-	        testOnReturn: false
-	        poolPreparedStatements: true
-	        maxOpenPreparedStatements: 20
 
 	mybatis-plus:
 	  mapper-locations: classpath:mapper/*.xml
